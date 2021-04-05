@@ -17,7 +17,7 @@ dim(EJR) # [1] 2172129       3; still 223,475 threads
 
 
 # (2) authors
-authors=read.csv(paste0(dir_data,"NBER/nber-ejr-author-info.csv"),stringsAsFactors = FALSE)
+authors=read.csv(paste0(dir_data,"NBER/nber-author-info.csv"),stringsAsFactors = FALSE)
 authors=authors[,c("full_name","first_name","last_name")]
 sum(duplicated(authors$full_name)) # 0 
 

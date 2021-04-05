@@ -53,7 +53,8 @@ sum(full_sample$source2) # [1] 163591 that mention names of NBER authors
 #------------------------------------------------------------------------------------------#
 ### (3) Threads that mention JMCs (matched by names)
 
-JMC_ID_merged = read.csv("JMC/JMC-history-ID-merged.csv", stringsAsFactors = FALSE)
+JMC_ID_merged = read.csv(paste0(dir_data,"JMC/JMC-history-ID-merged.csv"), 
+                                stringsAsFactors = FALSE)
 # note the data above only includes posts that mention at least part of a person's name
 uniq_thread_JMC = unique(JMC_ID_merged$title_id1) # 3,117 unique threads that contain posts about JMCs
 
