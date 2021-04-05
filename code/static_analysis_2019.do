@@ -25,7 +25,7 @@ save "`dir_data'full_sample2019_stata.dta",replace
 
 
 * codebook
-log using "`dir_output'codebook_dta.log",replace
+log using "`dir_output'codebook_full_sample2019_dta.log",replace
 use "`dir_data'full_sample2019_stata_final.dta"
 count 
 desc, full
