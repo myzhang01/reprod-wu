@@ -9,7 +9,7 @@ in merge-sources.R, fix file path for JMC
 merge-sources.R, warning message: full_sample2019.csv loses info
 
 clean_raw_text.R, also warning message: EJR0_raw_text_cleaned.csv probably loses info??
-clean_raw_text.R: str_only_Nov2017.csv  what is this file???
+clean_raw_text.R: creation of str_only_Nov2017.csv, but this file unused/doesn't exist
 
 move codebook_datasets.xlsx and codebook_full_sample2019_dta.log into results_static
 static .do file creates codebook_dta.log
