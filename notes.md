@@ -1,4 +1,4 @@
-## errors in readme, file names, within files
+## errors in readme, file names, within files (improvements)
 
 readme for code, clean_scraped_data.py should say data/raw/scraped_posts.txt
 
@@ -15,6 +15,7 @@ move codebook_datasets.xlsx and codebook_full_sample2019_dta.log into results_st
 static .do file creates codebook_dta.log
 
 -  the two above log files are supposed to be the same, but the name in the .do file has changed
+
 
 ## thoughts
 
@@ -37,3 +38,9 @@ MANUAL_TABLE_2: results inconsistent; unclear table creation process
 all JMC code: have not attempted to run
 prep_for_analysis.py and upstream code: have not attempted to run
 job-rank.R: have no attempted to run
+
+
+## reproduction from raw
+
+1. clean_scraped_data.py produces slightly larger EJR0_raw_text.csv file than provided in dataverse
+2. clean_scraped_data.py produces larger + different raw_time_stamp.csv file (two additional columns; differing entries per row)
